@@ -1,5 +1,5 @@
-public class Euler10 {
-	public Euler10() {
+public class Euler09 {
+	public Euler09() {
 	}
 
 	public static void main(String[] args) {

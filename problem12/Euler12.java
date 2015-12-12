@@ -10,9 +10,13 @@ public class Euler12 {
 			count = 0;
 			a += 1;
 			triangleNumber += a;
-			for (int i = 1; i <= triangleNumber; i++) {
-				if(triangleNumber % i == 0) {
-					count++;
+			int tsqr = (int) Math.sqrt(triangleNumber);
+			for (int i = 1; i <= tsqr; i++) {
+				if (triangleNumber % i == 0) {
+					count += 2;
+				}
+				if (triangleNumber == tsqr * tsqr) {
+					count--;
 				}
 			}
 		}
